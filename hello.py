@@ -1,6 +1,6 @@
 #! /usr/bin/python
 #
-def application(environ, start_response):
+def app(environ, start_response):
     query_str = environ['QUERY_STRING']
     parameters = query_str.split("&")
     result = "\n".join(parameters)
